@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+ 
+    <title>星球之家</title>
+    <meta name='robots' content='max-image-preview:large' />
+    <meta name="referrer" content="no-referrer">
+   
+	<meta name="keywords" content="视频引导页">
+	<meta name="description" content="视频引导页">
+<style>
+  .info {
+    font-size: 1.2em;
+    color: #fff;
+    border: 2px solid #fff;
+    padding: 10px;
+    display: inline-block;
+    animation: borderAnimation 3s infinite alternate;
+  }
+  .info:last-child{
+    display:none;
+  }
+  @keyframes borderAnimation {
+    0% {
+      border-color: #ff0000; /* 初始颜色 */
+    }
+    100% {
+      border-color: #00ff00; /* 最终颜色 */
+    }
+  }
+</style>
+
+    <style>
+  .bjimg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -10;
+    object-fit: cover;
+    margin: 0;
+    padding: 0;
+  }
+
+  @keyframes rainbow {
+    0% {
+      color: #ff0000; /* 红色 */
+    }
+    16.67% {
+      color: #ff9900; /* 橙色 */
+    }
+    33.33% {
+      color: #ffff00; /* 黄色 */
+    }
+    50% {
+      color: #00ff00; /* 绿色 */
+    }
+    66.67% {
+      color: #0000ff; /* 蓝色 */
+    }
+    83.33% {
+      color: #9900ff; /* 紫色 */
+    }
+    100% {
+      color: #ff0000; /* 回到红色，形成循环 */
+    }
+  }
+
+  #head h1 {
+    font-size: 2em; /* 调整字体大小 */
+    animation: rainbow 7s infinite; /* 7秒一个循环，无限重复 */
+  }
+    </style>
+<style>
+  .color-changing-text {
+    font-size: 1.5em; /* 调整字体大小 */
+    white-space: nowrap; /* 防止文字换行 */
+    overflow: hidden; /* 隐藏溢出的文字 */
+    background: linear-gradient(90deg, #ff0000, #ff9900, #ffff00, #00ff00, #0000ff, #9900ff, #ff0000); /* 七彩渐变背景 */
+    -webkit-background-clip: text; /* 使用背景色裁剪文字 */
+    color: transparent; /* 初始文字透明 */
+    animation: colorChange 5s linear infinite; /* 5秒一个循环，线性动画，无限重复 */
+  }
+
+  @keyframes colorChange {
+    0% {
+      background-position: 0%; /* 初始位置 */
+    }
+    100% {
+      background-position: 700%; /* 最终位置，根据渐变背景中颜色的数量调整 */
+    }
+  }
+</style>
+  <script type="text/ecmascript" src="sha1.js"></script>  
+<script type="text/javascript">  
+  var sha = hex_sha1('mima123465')  
+    alert(sha)     
+</script>   
+    <link rel="stylesheet" type="text/css" href="static1/css/main.css">
+    <link rel="stylesheet" type="text/css" href="static1/css/media.css">
+</head>
+<body>
+    <div id="preloader" style="display: none;">
+        <div class="sk-three-bounce">
+            <div class="sk-child sk-bounce1"></div>
+            <div class="sk-child sk-bounce2"></div>
+            <div class="sk-child sk-bounce3"></div>
+        </div>
+    </div>
+	<header id="header">
+		<div class="header_left">
+		    <img src="static1/img/logo.png" alt="xiaomaw.cn视频" title="xiaomaw.cn视频" style="display:none;">
+			<!--星球之家-->
+		</div>
+		<div class="header_right" id="background_voice">
+		</div>
+	</header>
+	<div id="container">
+		<video id="background_video" loop="" muted=""></video>
+		<div id="video_cover" style="display: none;"></div>
+		<div id="overlay"></div>
+		<section id="main_content">
+			<div id="head">
+				<h1>欢迎光临</h1>
+				<p  class="color-changing-text">感谢您访问我们的网站</p>
+				<p class="info">这里是星球之家导航站，您的支持是我们前进的动力！</p>
+			</div>
+			<div id="links">
+			                         <a href="https://lxq666.com" class="back-button">星球之家</a>
+			                         <a href="https://lxq666.com" class="back-button">星球之家</a>
+			                         <a href="https://lxq666.com" class="back-button">星球之家</a>
+			                    
+				
+			</div>
+			<div style="position: absolute;color: white;"></div>
+		</section>
+	</div>
+	<div id="footer">
+		<span class="info">
+			Copyright&nbsp;&nbsp;©&nbsp;&nbsp;2019-2024&nbsp;&nbsp;|&nbsp;&nbsp;<a href="https://beian.miit.gov.cn" target="_blank"><!--暂未备案--></a>
+		</span>
+	</div>
+  
+    <script src="static1/js/bideo.js"></script>
+    <script src="static1/js/main.js"></script>
+
+    <script type="text/javascript">
+   $(document).bind("contextmenu",function(){return false;});	//禁止右键
+    
+    $(document).bind("selectstart",function(){return false;});	//禁止选择
+    
+    document.onkeydown = function(){							//禁止F12
+        if(window.event && window.event.keyCode == 123 || window.event.keyCode== 83 ||window.event.keyCode== 85) {
+                event.keyCode = 0;
+                event.returnValue = false;
+         }
+    }
+    </script>
+</body>
+<video src="static1/img/b.mp4" class="bjimg" autoplay loop muted playsinline webkit-playsinline x5-video-player-type="h5"></video>
+
+</html>
