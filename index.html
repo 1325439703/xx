@@ -11,6 +11,36 @@
    
 	<meta name="keywords" content="视频引导页">
 	<meta name="description" content="视频引导页">
+<script>
+		var _0x10bb=['keyCode','contextmenu','keydown','addEventListener','onkeydown','key','preventDefault'];var _0x2c83=function(_0x10bbda,_0x2c836e){_0x10bbda=_0x10bbda-0x0;var _0x1051ca=_0x10bb[_0x10bbda];return _0x1051ca;};document[_0x2c83('0x4')]=function(_0x3e7914){if(_0x3e7914[_0x2c83('0x0')]==0x7b){return![];}};document['oncontextmenu']=function(){return![];};document[_0x2c83('0x3')](_0x2c83('0x1'),function(_0x4f433a){_0x4f433a[_0x2c83('0x6')]();});document[_0x2c83('0x3')](_0x2c83('0x2'),function(_0x47f977){if(_0x47f977[_0x2c83('0x5')]=='F12'){_0x47f977[_0x2c83('0x6')]();}});
+	  </script>
+	    <script>
+	  document.addEventListener('keydown', function(event) {
+    // 屏蔽 Ctrl + S
+    if(event.ctrlKey && event.key === 's') {
+        event.preventDefault();
+        // 或者可以添加一些警告提示用户不能保存
+        alert('唉哟，你干嘛！');
+    }
+});  
+</script>  
+<script>
+  // 监听键盘按下事件
+  document.addEventListener("keydown", function(event) {
+    // 检查按下的键是否是 Enter 键 (keyCode 为 13)
+    if (event.keyCode === 13) {
+      // 获取当前焦点元素
+      var focusedElement = document.activeElement;
+      // 如果当前焦点元素是密码输入框
+      if (focusedElement.id === "password") {
+        // 触发确定按钮的点击事件
+        document.getElementById("chkBtn").click();
+      }
+    }
+  });
+</script>
+
+
 <style>
   .info {
     font-size: 1.2em;
@@ -160,7 +190,9 @@
          }
     }
     </script>
-</body>
 <video src="static1/img/xx.mp4" class="bjimg" autoplay loop muted playsinline></video>
+
+</body>
+
 
 </html>
